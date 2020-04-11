@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="dndDice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="UjL-bu-ZuF">
+                                <rect key="frame" x="0.0" y="54" width="414" height="798"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Q3B-54-4hu">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="266"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VeH-Dx-ryP">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="266"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="d4_1" translatesAutoresizingMaskIntoConstraints="NO" id="se5-Zs-Z1q">
+                                                        <rect key="frame" x="0.0" y="0.0" width="207" height="228"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSe-5N-4LT">
+                                                        <rect key="frame" x="53.5" y="236" width="100" height="30"/>
+                                                        <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="O1u-9F-Khm"/>
+                                                            <constraint firstAttribute="width" constant="100" id="hT0-wR-3ly"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="Roll D4">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="D4RollButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t3x-Nz-WFb"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gf9-yE-p2O">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="266"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="d6_1" translatesAutoresizingMaskIntoConstraints="NO" id="mEN-pm-12k">
+                                                        <rect key="frame" x="0.0" y="0.0" width="207" height="228"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mW3-rd-sM0">
+                                                        <rect key="frame" x="53.5" y="236" width="100" height="30"/>
+                                                        <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="7xY-ck-Vkl"/>
+                                                            <constraint firstAttribute="width" constant="100" id="D2r-uH-ctS"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="Roll D6">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="D6RollButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lKj-1L-p3t"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="3nf-X2-tB1">
+                                        <rect key="frame" x="0.0" y="266" width="414" height="266"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YTM-le-Ial">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="266"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="d8_1" translatesAutoresizingMaskIntoConstraints="NO" id="rxt-49-gr5">
+                                                        <rect key="frame" x="0.0" y="0.0" width="207" height="228"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZl-4z-MDE">
+                                                        <rect key="frame" x="53.5" y="236" width="100" height="30"/>
+                                                        <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="GaH-Ky-MLO"/>
+                                                            <constraint firstAttribute="height" constant="30" id="mYB-fG-Weq"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="Roll D8">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="D8RollButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="buq-mQ-TFe"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="q2J-3r-k3j">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="266"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="d10_1" translatesAutoresizingMaskIntoConstraints="NO" id="xhj-qv-Blp">
+                                                        <rect key="frame" x="0.0" y="0.0" width="207" height="228"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Is1-8x-2u7">
+                                                        <rect key="frame" x="53.5" y="236" width="100" height="30"/>
+                                                        <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="R7s-gl-amo"/>
+                                                            <constraint firstAttribute="height" constant="30" id="XTn-VG-arN"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="Roll D10">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="D10RollButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Crt-wz-pkZ"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="L9E-AU-9rf">
+                                        <rect key="frame" x="0.0" y="532" width="414" height="266"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="41a-L0-h4k">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="266"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="d12_1" translatesAutoresizingMaskIntoConstraints="NO" id="8V0-bn-G6Y">
+                                                        <rect key="frame" x="0.0" y="0.0" width="207" height="228"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ApP-bu-Dl0">
+                                                        <rect key="frame" x="53.5" y="236" width="100" height="30"/>
+                                                        <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="Bx1-lB-rq6"/>
+                                                            <constraint firstAttribute="height" constant="30" id="IA2-yf-n3e"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="Roll D12">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="D12RollButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WTk-NP-mlh"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Z0O-4Z-upl">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="266"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="d20_1" translatesAutoresizingMaskIntoConstraints="NO" id="KYL-KR-7vf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="207" height="228"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glv-cb-sUX">
+                                                        <rect key="frame" x="53.5" y="236" width="100" height="30"/>
+                                                        <color key="backgroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="KwS-Qu-H6m"/>
+                                                            <constraint firstAttribute="width" constant="100" id="lhd-fe-SOO"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="Roll D20">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="D20RollButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UUo-Zn-jZp"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="UjL-bu-ZuF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="77w-fH-1Kx"/>
+                            <constraint firstItem="UjL-bu-ZuF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="EPq-8i-N4O"/>
+                            <constraint firstAttribute="trailing" secondItem="UjL-bu-ZuF" secondAttribute="trailing" id="gFf-At-iD4"/>
+                            <constraint firstItem="UjL-bu-ZuF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-10" id="gJb-JZ-ihy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="D10DieView" destination="xhj-qv-Blp" id="of3-sh-pOv"/>
+                        <outlet property="D12DieView" destination="8V0-bn-G6Y" id="KeX-Um-Fxi"/>
+                        <outlet property="D20DieView" destination="KYL-KR-7vf" id="GKA-VK-w0n"/>
+                        <outlet property="D4DieView" destination="se5-Zs-Z1q" id="GhK-62-CPK"/>
+                        <outlet property="D6DieView" destination="mEN-pm-12k" id="EsX-pF-VCM"/>
+                        <outlet property="D8DieView" destination="rxt-49-gr5" id="Mmj-Lh-Mob"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="d10_1" width="341" height="341"/>
+        <image name="d12_1" width="341" height="341"/>
+        <image name="d20_1" width="341" height="341"/>
+        <image name="d4_1" width="341" height="341"/>
+        <image name="d6_1" width="341" height="341"/>
+        <image name="d8_1" width="341" height="341"/>
+    </resources>
+</document>
